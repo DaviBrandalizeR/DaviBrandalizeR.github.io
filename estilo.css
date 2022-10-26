@@ -1,0 +1,75 @@
+body{
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+.TITULO{ 
+    font: normal 70px Kanit-Thin;
+    border: 10PX solid rgb(44, 44, 44);
+    text-align: center;
+    color: rgb(151, 204, 212);
+}
+ 
+.BOTAO2{
+border: 10px solid rgb(83, 135, 184);
+width: 1000px;
+height: 100px;
+font: normal 70px Kanit-SemiBold;
+text-align: center;
+color: rgb(0, 81, 255);
+}
+
+.BOTAO1{
+    text-align: center;
+}
+
+.BOTAO4{
+border: 10px solid rgb(83, 135, 184);
+width: 1000px;
+height: 100px;
+font: normal 70px Kanit-SemiBold;
+text-align: center;
+color: rgb(0, 81, 255);
+}
+    
+.BOTAO3{
+    text-align: center;
+}
+
+.BOTAO6{
+border: 10px solid rgb(83, 135, 184);
+width: 1000px;
+height: 100px;
+font: normal 70px Kanit-SemiBold;
+text-align: center;
+color: rgb(0, 81, 255);
+}
+        
+.BOTAO5{
+     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .MODULO {
+font: normal 60px Arial;
+}
+
+.TABELA1 {
+    font: normal 70px Kanit-Thin;
+    color: rgb(0, 0, 0);
+    border: 10px solid #000000;
+    background-color:rgb(151, 204, 212);
+    }
+

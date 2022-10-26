@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Css</title>
+</head>
+<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="/Fontes para projetos/">
+<body>
+    
+
+    <div class="TITULO">
+        <p> <img src="./img/ENGRENAGEM.png" width="312" height="312"></p>
+        <h1> GERENCIADOR DE PRODUÇÃO SATURNO</h1>
+    </div>
+
+<br>
+
+    <HR class="linha"></HR>
+
+<br>
+<br>
+<br>
+<br>
+
+    <div  class="BOTAO1" >
+        <input class="BOTAO2" type="text" id= "dados_modulos" placeholder="QUANTIDADE DE MODULOS">
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+    
+    <div  class="BOTAO3">
+        <input class="BOTAO4" type="text" id= "dados_longarinas" placeholder="QUANTIDADE DE LONGARINAS">
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+  
+    <div  class="BOTAO3">
+        <input class="BOTAO4" type="text" id= "dados_travessas" placeholder="QUANTIDADE DE TRAVESSAS">
+    </div>
+
+
+
+    <div id="dados">
+        <p>MODULOS 00000000000000000000000</p>
+    </div>
+    <P>
+        <input type="button" value="IMPRIMIR" onclick="funcao_pdf()">
+    </P>
+
+
+
+
+    <nav>
+        <ul>
+            <li> <a href="SubPagina.html"  class="TABELA1" >VER TABELA</a></li>
+        </ul>
+    </nav> 
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+  
+<script>
+
+
+
+
+
+
+
+
+    function funcao_pdf() {
+        var pegar_dados = document.getElementById('dados_modulos').innerHTML;
+        var pegar_dados1 = document.getElementById('dados_longarinas').innerHTML;
+        var pegar_dados2 = document.getElementById('dados_travessas').innerHTML;
+
+        var janela = window.open('','','width=800,heigth=600');
+        janela.document.write('<html> <head>');
+        janela.document.write('<title>PDF</title> </head>');
+        janela.document.write('<body');
+        janela.document.write(pegar_dados, pegar_dados1, pegar_dados2);
+        janela.document.write('/body></html>');
+        janela.document.close();
+        janela.print();
+
+        }
+</script>
+
+</html>
